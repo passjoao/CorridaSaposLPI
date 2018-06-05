@@ -14,6 +14,7 @@
             int empates;
             int qtdTotalPulos;
             int max;
+            int colocacao;
         public:
             static int disCorrida;
             Sapo();
@@ -46,6 +47,9 @@
 
             int getMax();
             void setMax(int max);
+
+            int getColocacao():
+            void setColocacao(int colocacao);
 
             void pular();
             

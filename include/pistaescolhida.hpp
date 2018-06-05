@@ -3,7 +3,7 @@
 	#include <vector>
 
 	#include "../include/pista.hpp"
-	#include "../include/corrida.hpp"
+
 
 	#include <sstream>
 	#include <string>

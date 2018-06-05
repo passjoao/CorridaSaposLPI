@@ -22,6 +22,7 @@ Sapo(string nome, int IdAnt, int qtdPulos, int qtdProvas, int vitorias, int empa
 	this->vitorias = vitorias;
 	this->empates = empates;
 	this->max = max;
+    this->colocacao = 0;
 }
 Sapo::~Sapo(){}
 
@@ -86,6 +87,13 @@ int Sapo::getMax(){
 }
 void Sapo::setMax(int max){
     this->max = max;
+}
+
+int Sapo::getColocacao(){
+    return this->colocacao;
+}
+void Sapo::setColocacao(int colocacao){
+    this->colocacao = colocacao;
 }
 
 void Sapo::pular(){

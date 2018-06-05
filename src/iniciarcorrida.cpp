@@ -1,5 +1,7 @@
 #include "../include/iniciarCorrida.hpp"
 
+
+//funcao para verificar se ainda falta corredores na corrida
 bool ultimo(vector<Sapo> &sapos){
     for(int i=0; i<(int)sapos.size(); i++){
 		if(sapos[i].getdisPercorrida() < Sapo.disCorrida) return true;
@@ -7,8 +9,8 @@ bool ultimo(vector<Sapo> &sapos){
 	return false;
 }
 
+//funcao da corrida
 void iniciarCorrida(vector<Sapo> &sapos){
-    int ids[] = new int*(int)sapos.size();
     int position = 1;
     while(ultimo(sapos)){
         for(int i = 0; i < (int)sapos.size(); i++){
@@ -17,51 +19,38 @@ void iniciarCorrida(vector<Sapo> &sapos){
 
         for(i = 0;i < (int)sapos.size();i++){
             if(sapos[i].getdisPercorrida() >= Sapo.disCorrida){
-                if(position == 1){
-                    sapos[i].setVitorias();
-                }
+                if(position == 1)sapos[i].setVitorias();
+                sapos[i].setColocacao(position);
             }            
         }
         position++;     
     }
 
+	int cont = 0;
+	for(int i = 0; i < (int)sapos.size(); i++){
+		if (sapos[i].getColocacao()==1)cont++;		
+	}
+	if(cont>1){
+		for(int i = 0; i < (int)sapos.size(); i++){
+			if(sapos[i].getColocacao()==1) sapos[i].setEmpates();
+		}
+	}
 
-
-	ranking++;
-	// Verificando os empates
-	int contador;
-	for(int i=1; i<ranking; i++){
-		contador = 0;
+	cout << "=======Colocações=======" << endl;
+	for(int i=1; i<position; i++){
 		for(int j=0; j<(int)sapos.size(); j++){
-			if(sapos[j].getRanking() == i) contador++;
-		}
-		if(contador > 1){
-			for(int j=0; j<(int)sapos.size(); j++){
-				if(sapos[j].getRanking() == i) {
-					sapos[j].setEmpates();
-				}
+			if(sapos[j].getColocacao() == i){
+				cout << sapos[j].getColocacao() << "º Lugar: " << endl
+					<< "||Nome: " << sapos[j].getNome() << endl
+					<< "||Identificador: " << sapos[j].getId() << endl
+					<< "||Pulos dados: " << sapos[i].getqtdPulos() << endl;
 			}
 		}
 	}
-
-	// Imprimindo o Ranking
-	cout << "********** Ranking **********" << endl;
-	for(int rk=1; rk<ranking; rk++){
-		for(int i=0; i<(int)sapos.size(); i++){
-			if(sapos[i].getRanking() == rk){
-				cout << sapos[i].getRanking() << "º Lugar: " << endl
-					<< "   Nome: " << sapos[i].getNome() << endl
-					<< "   Identificador: " << sapos[i].getIdentificador() << endl
-					<< "   Pulos dados: " << sapos[i].getPulosDados() << endl;
-			}
-		}
-	}
-
-	// Resetando as informações para próxima corrida
 	for(int i=0; i<(int)sapos.size(); i++){
-		sapos[i].setProvasDisp(sapos[i].getProvasDisp()+1);
-		sapos[i].setPulosDados(0);
-		sapos[i].setDistPercorrida(0);
-		sapos[i].setRanking(0);
+		sapos[i].setqtdProvas(sapos[i].getqtdProvas()+1);
+		sapos[i].setqtdPulos(0);
+		sapos[i].setdisPercorrida(0);
+		sapos[i].setColocacao(0);
 	}
 }
