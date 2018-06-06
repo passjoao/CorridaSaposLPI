@@ -1,7 +1,7 @@
 //Codigo de leitura disponibilizado pelo professor da disciplina "Linguagem de programação I"
 
 
-#include "../include/lerArquivos.hpp"
+#include "../include/lerarquivo.hpp"
 
 void arqSapos(vector<Sapo> &sapos){
 	string line, nome;

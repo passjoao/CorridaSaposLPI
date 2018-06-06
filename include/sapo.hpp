@@ -55,3 +55,4 @@
             
             friend ostream& operator << (ostream &os, Sapo &sapo);
     }
+#endif

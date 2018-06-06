@@ -1,4 +1,4 @@
-#include "../include/iniciarCorrida.hpp"
+#include "../include/iniciarcorrida.hpp"
 
 
 //funcao para verificar se ainda falta corredores na corrida

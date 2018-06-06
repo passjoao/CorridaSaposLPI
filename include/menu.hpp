@@ -2,19 +2,19 @@
 #define MENU_HPP
 
 	#include <vector>
-	#include <sstream>
+	#include <stream>
 
 	using namespace std;
 
-	#include "../include/sapo.hpp"
-	#include "../include/pista.hpp"
-	#include "../include/criarpista.hpp"
-	#include "../include/criarSapo.hpp"
-	#include "../include/iniciarcorrida.hpp"
-	#include "../include/leraquivo.hpp"
-	#include "../include/escreveraquivo.hpp"
-	#include "../include/pistaescolhida.hpp"
-	#include "../include/selecionarSapo.hpp"
+	#include "sapo.hpp"
+	#include "pista.hpp"
+	#include "criarpista.hpp"
+	#include "criarSapo.hpp"
+	#include "iniciarcorrida.hpp"
+	#include "lerarquivo.hpp"
+	#include "escreverarquivo.hpp"
+	#include "pistaescolhida.hpp"
+	#include "selecionarSapo.hpp"
 
 	void menu();
 #endif

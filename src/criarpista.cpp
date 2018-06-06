@@ -1,4 +1,4 @@
-#include "../include/criarPista.hpp"
+#include "../include/criarpista.hpp"
 
 void criarPista(vector<Pista> &pistas){
 	cout << "========Adicinando uma Pista========" << endl << endl;
