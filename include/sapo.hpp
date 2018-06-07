@@ -1,3 +1,11 @@
+/**
+* @author João Victor
+* @file sapo.hpp
+* @sa https://github.com/passjoao/CorridaSaposLPI
+* @since 03/05/18
+* @date 06/05/18
+* @brief cabeçalho da classe Sapo
+*/
 #ifndef CLASS_SAPO_HPP
 #define CLASS_SAPO_HPP
 	#include <string>

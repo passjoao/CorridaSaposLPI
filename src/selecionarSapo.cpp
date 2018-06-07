@@ -1,3 +1,11 @@
+/**
+* @author João Victor
+* @file pista.cpp
+* @sa https://github.com/passjoao/CorridaSaposLPI
+* @since 03/05/18
+* @date 06/05/18
+* @brief Função para selecionar os sapos para a corrida
+*/
 
 #include "../include/selecionarSapo.hpp"
 

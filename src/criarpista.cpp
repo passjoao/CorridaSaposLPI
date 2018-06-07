@@ -1,3 +1,11 @@
+/**
+* @author João Victor
+* @file criarpista.cpp
+* @sa https://github.com/passjoao/CorridaSaposLPI
+* @since 03/05/18
+* @date 06/05/18
+* @brief Função de criação da pista
+*/
 #include "../include/criarpista.hpp"
 
 void criarPista(vector<Pista> &pistas){

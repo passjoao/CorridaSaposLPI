@@ -1,7 +1,7 @@
-PROG = sapos
+PROG = execute
 CC = g++
 CPPFLAGS = -O0 -g -Wall -pedantic
-OBJS = main.o sapo.o pista.o criarpista.o criarSapo.o pistaescolhida.o iniciarcorrida.o escreverarquivos.o lerarquivos.o selecionarSapo.o menu.o
+OBJS = main.o sapo.o pista.o criarpista.o criarSapo.o pistaescolhida.o iniciarcorrida.o escreverarquivo.o lerarquivo.o selecionarSapo.o menu.o
 
 $(PROG) : $(OBJS)
 	$(CC) $(OBJS) -o bin/$(PROG)
@@ -31,11 +31,11 @@ pistaescolhida.o : include/pistaescolhida.hpp
 iniciarcorrida.o : include/iniciarcorrida.hpp
 	$(CC) $(CPPFLAGS) -c src/iniciarcorrida.cpp
 
-escreverarquivos.o : include/escreverarquivos.hpp
-	$(CC) $(CPPFLAGS) -c src/escreverarquivos.cpp
+escreverarquivo.o : include/escreverarquivo.hpp
+	$(CC) $(CPPFLAGS) -c src/escreverarquivo.cpp
 
-lerarquivos.o : include/lerarquivos.hpp
-	$(CC) $(CPPFLAGS) -c src/lerarquivos.cpp
+lerarquivo.o : include/lerarquivo.hpp
+	$(CC) $(CPPFLAGS) -c src/lerarquivo.cpp
 
 selecionarSapo.o : include/selecionarSapo.hpp
 	$(CC) $(CPPFLAGS) -c src/selecionarSapo.cpp

@@ -1,4 +1,12 @@
-//Codigo de leitura disponibilizado pelo professor da disciplina "Linguagem de programação I"
+/**
+* @author João Victor
+* @file lerarquivo.cpp
+* @sa https://github.com/passjoao/CorridaSaposLPI
+* @since 03/05/18
+* @date 06/05/18
+* @brief Função de escrita nos arquivos .txt dos vectors sapos e pistas
+* @details Codigo de leitura dados pelo professor da disciplina "Linguagem de programação I" em aula e em slides
+*/
 
 
 #include "../include/lerarquivo.hpp"

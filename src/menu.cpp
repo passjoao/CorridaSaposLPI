@@ -1,3 +1,12 @@
+/**
+* @author João Victor
+* @file menu.cpp
+* @sa https://github.com/passjoao/CorridaSaposLPI
+* @since 03/05/18
+* @date 06/05/18
+* @brief Função menu de interação com o usuário
+* @details Essa função é responsável pela interação do usuário com o programa
+*/
 #include "../include/menu.hpp"
 
 int menu(){

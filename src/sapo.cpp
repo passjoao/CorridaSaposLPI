@@ -1,3 +1,12 @@
+/**
+* @author João Victor
+* @file pista.cpp
+* @sa https://github.com/passjoao/CorridaSaposLPI
+* @since 03/05/18
+* @date 06/05/18
+* @brief Classe Sapo
+*/
+
 #include "../include/sapo.hpp"
 
 #include <time.h>
