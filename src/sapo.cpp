@@ -9,19 +9,13 @@
 
 #include "../include/sapo.hpp"
 
-#include <time.h>
-#include <iostream>
-#include <string>
-
-using namespace std;
-
 int Sapo::disCorrida;
 
 Sapo::Sapo(){
 	disPercorrida = 0;
 	qtdPulos = 0;
 }
-Sapo(string nome, int IdAnt, int qtdPulos, int qtdProvas, int vitorias, int empates, int max){
+Sapo::Sapo(string nome, int IdAnt, int qtdPulos, int qtdProvas, int vitorias, int empates, int max){
     this->nome = nome;
 	this->Id = IdAnt + 1;
 	this->disPercorrida = 0;
@@ -35,7 +29,7 @@ Sapo(string nome, int IdAnt, int qtdPulos, int qtdProvas, int vitorias, int empa
 }
 Sapo::~Sapo(){}
 
-int Sapo::getNome(){
+string Sapo::getNome(){
     return this->nome;
 }
 void Sapo::setNome(string nome){
@@ -60,7 +54,7 @@ int Sapo::getqtdPulos(){
     return this->qtdPulos;
 }
 void Sapo::setqtdPulos(int qtdPulos){
-    this->qtdPulos;
+    this->qtdPulos = qtdPulos;
 }
 
 int Sapo::getqtdProvas(){
@@ -74,7 +68,7 @@ int Sapo::getVitorias(){
     return this->vitorias;
 }
 void Sapo::setVitorias(){
-    this->vitorias = this=>vitorias +1;
+    this->vitorias = this->vitorias +1;
 }
 
 int Sapo::getEmpates(){
@@ -98,24 +92,25 @@ void Sapo::setMax(int max){
     this->max = max;
 }
 
-int Sapo::getColocacao(){
-    return this->colocacao;
+void Sapo::setcolocacao(int colocacao){
+	this->colocacao = colocacao;
 }
-void Sapo::setColocacao(int colocacao){
-    this->colocacao = colocacao;
+
+int Sapo::getcolocacao(){
+	return this->colocacao;
 }
 
 void Sapo::pular(){
     int pulo;
-    if(disPercorrida <= disTotal){
+    if(disPercorrida <= disCorrida){
         pulo = rand()%max+1;
         this->disPercorrida += pulo;
         setqtdPulos(getqtdPulos()+1);
         setqtdTotalPulos(getqtdTotalPulos()+1);
-        cout << "||Id: " << this->Id << ednl;
+        cout << "||Id: " << this->Id << endl;
         cout << "||Sapo: " << this->nome << endl;
         cout << "||Distancia: " << pulo << endl;
-        if (disPercorrida >= disTotal) cout << "\n\\0/\\0/\\0/\\0/***FINISH***\\0/\\0/\\0/" << endl;
+        if (disPercorrida >= disCorrida) cout << "\n\\0/\\0/\\0/\\0/***FINISH***\\0/\\0/\\0/" << endl;
         cout << "=====================================" << endl;
     }
 }

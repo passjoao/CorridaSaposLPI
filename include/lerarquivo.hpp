@@ -12,7 +12,8 @@
 	#include <vector>
 	#include <fstream>
 	#include <iostream>
-
+	#include <string>
+	
 	using namespace std;
 
 	#include "../include/sapo.hpp"

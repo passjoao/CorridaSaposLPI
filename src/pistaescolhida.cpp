@@ -8,16 +8,17 @@
 */
 
 #include "../include/pistaescolhida.hpp"
+#include "../include/sapo.hpp"
 
 void escolherPista(vector<Pista> pistas){
 
-	int pist, id;
+	int pist;
 
 	cout << "========Escolha uma pista========" << endl;
 	for(int i=0; i<(int) pistas.size(); i++){
-		cout << "||" << pistas[i].getId() << ") " << pistas[i].getDistancia() << ";"<< endl;
+		cout << "||" << pistas[i].getIdPista() << ") " << pistas[i].getDistancia() << ";"<< endl;
 	}
-    cout ":: ";
+    cout << ":: ";
     cin >> pist;
-    Sapo.disCorrida = pista[pist + 1].getdistancia();
+    Sapo::disCorrida = pistas[pist + 1].getDistancia();
 }

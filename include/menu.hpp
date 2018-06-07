@@ -10,7 +10,7 @@
 #define MENU_HPP
 
 	#include <vector>
-	#include <stream>
+	#include <iostream>
 
 	using namespace std;
 
@@ -22,7 +22,6 @@
 	#include "lerarquivo.hpp"
 	#include "escreverarquivo.hpp"
 	#include "pistaescolhida.hpp"
-	#include "selecionarSapo.hpp"
 
-	void menu();
+	int menu();
 #endif

@@ -51,18 +51,12 @@ int menu(){
 			}
 			cout << endl; 
     	}
-    	else if(res == 5){
-    		vector<Sapo> selecionado;
+    	else if(res == 5){  		
     		escolherPista(pistas);
-    		selecionarSapos(sapos, selecionado);
-    		iniciarCorrida(selecionado);
-    		for( int i = 0 ; i < selecionado.size(); i++){
-			   delete selecionado[i];
-			   selecionado.clear();
-			}
+    		iniciarCorrida(sapos);
     	}
     	else{
-    		cout << "||Opção invalida!!" >>endl;
+    		cout << "||Opção invalida!!"  << endl;
     		cin >> res;
     	}
     	cout << "||Opcao: ";

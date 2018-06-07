@@ -1,7 +1,7 @@
 PROG = execute
 CC = g++
 CPPFLAGS = -O0 -g -Wall -pedantic
-OBJS = main.o sapo.o pista.o criarpista.o criarSapo.o pistaescolhida.o iniciarcorrida.o escreverarquivo.o lerarquivo.o selecionarSapo.o menu.o
+OBJS = main.o sapo.o pista.o criarpista.o criarSapo.o pistaescolhida.o iniciarcorrida.o escreverarquivo.o lerarquivo.o menu.o
 
 $(PROG) : $(OBJS)
 	$(CC) $(OBJS) -o bin/$(PROG)
@@ -36,9 +36,6 @@ escreverarquivo.o : include/escreverarquivo.hpp
 
 lerarquivo.o : include/lerarquivo.hpp
 	$(CC) $(CPPFLAGS) -c src/lerarquivo.cpp
-
-selecionarSapo.o : include/selecionarSapo.hpp
-	$(CC) $(CPPFLAGS) -c src/selecionarSapo.cpp
 	
 clean:
 	rm -f build/*.o

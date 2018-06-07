@@ -18,11 +18,11 @@
 		int IdPista;
 		int distancia;
 	public:
-		int getId();
+		int getIdPista();
 		int getDistancia();
         
 		Pista();
-		Pista(int distancia);
+		Pista(int IdPistaAnt, int distancia);
 		~Pista();
 
 		friend ostream& operator << (ostream &os, Pista &pist);

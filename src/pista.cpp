@@ -10,7 +10,7 @@
 #include "../include/pista.hpp"
 
 int Pista::getIdPista(){
-	return this->idPista;
+	return this->IdPista;
 }
 int Pista::getDistancia(){
 	return this->distancia;

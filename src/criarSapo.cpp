@@ -20,13 +20,14 @@ void criarSapo(vector<Sapo> &sapos){
     }
 
 	cout << "Digite o nome do sapo: ";
+	cin.ignore();
 	getline(cin, nome);
 
 	cout << "Digite a força do pulo de " << nome << ": ";
 	cin >> salto;
 
 	cin.ignore();
-	Sapo sapo(nome, idAnt, 0, 0, 0, 0, salto)
+	Sapo sapo(nome, idAnt, 0, 0, 0, 0, salto);
 	sapos.push_back(sapo);
     
 	cout << "========Sapo adicionado!========" << endl << endl;

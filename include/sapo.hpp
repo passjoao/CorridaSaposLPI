@@ -9,7 +9,12 @@
 #ifndef CLASS_SAPO_HPP
 #define CLASS_SAPO_HPP
 	#include <string>
+	#include <time.h>
+	#include <iostream>
+	#include <cstdlib>
+	
 	using namespace std;
+	
 	class Sapo{
         private:
             string nome;
@@ -18,7 +23,7 @@
             int qtdPulos;
 
             int qtdProvas;
-            int vitorias.
+            int vitorias;
             int empates;
             int qtdTotalPulos;
             int max;
@@ -56,11 +61,12 @@
             int getMax();
             void setMax(int max);
 
-            int getColocacao():
-            void setColocacao(int colocacao);
+            void setcolocacao(int colocacao);
+			int getcolocacao();
+
 
             void pular();
             
             friend ostream& operator << (ostream &os, Sapo &sapo);
-    }
+    };
 #endif

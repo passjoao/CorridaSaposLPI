@@ -8,10 +8,10 @@
 * @details Codigo de leitura dados pelo professor da disciplina "Linguagem de programação I" em aula e em slides
 */
 
-
 #include "../include/lerarquivo.hpp"
 
 void arqSapos(vector<Sapo> &sapos){
+	
 	string line, nome;
 	ifstream myfile("files/sapos.txt");
 
@@ -25,14 +25,14 @@ void arqSapos(vector<Sapo> &sapos){
 		getline(myfile, line);
 		if(line == "") break;
         //stoi() converte o dado da linha em um Inteiro
-		if(cont == 1) Id = stoi(line) - 1;
+		if(cont == 1) Id = atoi(line.c_str()) - 1;
 		else if(cont == 2) nome = line;
-		else if(cont == 3) pulos = stoi(line);
-		else if(cont == 4) provas = stoi(line);
-		else if(cont == 5) vitorias = stoi(line);
-		else if(cont == 6) empates = stoi(line);
+		else if(cont == 3) pulos = atoi(line.c_str());
+		else if(cont == 4) provas = atoi(line.c_str());
+		else if(cont == 5) vitorias = atoi(line.c_str());
+		else if(cont == 6) empates = atoi(line.c_str());
 		else if(cont == 7){
-			max = stoi(line);
+			max = atoi(line.c_str());
 			cont = 0;
             //criar o sapo com os dados do arquivo e adicionar ao vector sapos
 			Sapo saporra(nome, Id, pulos, provas, vitorias, empates, max);
@@ -56,9 +56,9 @@ void arqPistas(vector<Pista> &pistas){
 		myfile >> line;
 		if(line == "") break;
 		
-		if(cont == 1) id = stoi(line) - 1; 
+		if(cont == 1) id = atoi(line.c_str()) - 1; 
 		else if(cont == 2){
-			dist = stoi(line);
+			dist = atoi(line.c_str());
 			cont = 0;
 			Pista posto(id, dist);
 			pistas.push_back(posto);
