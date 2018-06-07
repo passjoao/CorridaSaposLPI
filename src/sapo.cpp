@@ -123,6 +123,6 @@ ostream& operator << (ostream &os, Sapo &sapo){
 		<< "||Empates: " << sapo.getEmpates() << endl
 		<< "||Força de salto: " << sapo.getMax() << endl
 		<< "||Total de pulos dados: " << sapo.getqtdTotalPulos() << endl
-        << cout << "=====================================" << endl;
+        	<< "=====================================" << endl;
 	return os;
 }

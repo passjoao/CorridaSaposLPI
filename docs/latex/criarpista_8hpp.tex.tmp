@@ -1,0 +1,36 @@
+\hypertarget{criarpista_8hpp}{}\section{include/criarpista.hpp File Reference}
+\label{criarpista_8hpp}\index{include/criarpista.\+hpp@{include/criarpista.\+hpp}}
+
+
+cabeçalho da função para criar e adivionar uma pista ao vetor de pistas  
+
+
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}../include/pista.\+hpp\char`\"{}}\newline
+Include dependency graph for criarpista.\+hpp\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{criarpista_8hpp_a7cf85f1e9e3f3612121fa7863ded9cc6}\label{criarpista_8hpp_a7cf85f1e9e3f3612121fa7863ded9cc6}} 
+void {\bfseries criar\+Pista} (vector$<$ \hyperlink{classPista}{Pista} $>$ \&pistas)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+cabeçalho da função para criar e adivionar uma pista ao vetor de pistas 
+
+\begin{DoxyAuthor}{Author}
+João Victor
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/passjoao/CorridaSaposLPI}{\tt https\+://github.\+com/passjoao/\+Corrida\+Sapos\+L\+PI} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+03/05/18 
+\end{DoxySince}
+\begin{DoxyDate}{Date}
+06/05/18 
+\end{DoxyDate}

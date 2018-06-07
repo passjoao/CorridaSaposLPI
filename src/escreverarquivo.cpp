@@ -21,7 +21,7 @@ void escreverSapos(vector<Sapo> &sapos){
 }
 
 void escreverPistas(vector<Pista> &pistas){
-	ofstream myfile("docs/pistas.txt");
+	ofstream myfile("files/pistas.txt");
 	if(myfile.is_open()){
 		for(int i=0; i<(int)pistas.size(); i++){
 			myfile << pistas[i].getIdPista() << "\n" << pistas[i].getDistancia() << "\n";

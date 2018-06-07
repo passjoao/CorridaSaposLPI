@@ -1,0 +1,53 @@
+Projeto da disciplina Linguagem de programação I ~\newline
+Aplicação dos conceitos de Programação Orientada a Objetos (P\+OO)
+
+\subsection*{Autor}
+
+João Victor Soares Oliveira
+
+\subsubsection*{\href{https://github.com/passjoao/CorridaSaposLPI}{\tt Link para acesso no gitgub}}
+
+\#\# Compilar 
+\begin{DoxyCode}
+$make
+\end{DoxyCode}
+ \#\# Executar 
+\begin{DoxyCode}
+$.bin/execute
+\end{DoxyCode}
+ \subsection*{Descrição}
+
+O projeto busca implementar uma corrida de sapos criados pela classe \hyperlink{classSapo}{Sapo}, no qual, o usuário poderá fazer as seguintes funcionalidades \tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+1. Mostrar estatísticas dos sapos&O usuário podera ver todos os sapos salvos no vector sapos. \\\cline{1-2}
+2. Mostrar estatísticas das pistas&O usuário podera ver todos as pistas salvas no vector pistas. \\\cline{1-2}
+3. Criar um sapo&O usuário poderá criar um sapo adcionando-\/o ao vector sapos. \\\cline{1-2}
+4. Criar uma pista&O usuário poderá criar uma pista adcionando-\/a ao vector pistas. \\\cline{1-2}
+5. iniciar uma corrida&O usuário poderá iniciar a corrida. \\\cline{1-2}
+\end{longtabu}
+
+
+{\bfseries 1.} O usuário poderá ver os dados de todos os sapos do vector sapos, exibindo o Id, Nome, Distância percorrida, quantidade de pulos dados, quantidade de provas disputadas, vitórias, empates e o salto máximo de sapo.
+
+{\bfseries 2.} O usuário poderá ver os dados de todas as pistas do vector pistas, exibindo o Id da pista e a distância dela.
+
+{\bfseries 3.} O usuário poderá criar um sapo pela função criar\+Sapo(), o usuário definirá o salto máximo e o nome do sapo, o programa colocará o Id do sapo como o último adicionado + 1, e os valores restantes como 0 e adiciona ao vector sapos.
+
+{\bfseries 4.} O usuário poderá criar uma pista pela função criarpista(), definindo o tamanho da mesma e o progama adiciona ao vector pista
+
+{\bfseries 5.}Ao iniciar a corrida, será mostrado os sapos que irão para a corrida, será exibido cada loop do programa o sapo, o ID e o tamanho do pulo dado, no qual os sapos pulam um de cada vez por ciclo até que todos cheguem a linha de chegada, definida pelo tamanho da pista
+
+
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+
+Antes do usuário entrar no menu de execuções, o programa irá ler dois arquivos .txt, contendo um banco de dados dos sapos e pistas salvando em seus respectivos vectors
+
+
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+
+Ao sair do programa, todos os sapos e pistas criados serão salvos nos arquivos .txt
