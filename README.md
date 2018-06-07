@@ -34,7 +34,7 @@
 
 <p><b>4.</b> O usuário poderá criar uma pista pela função criarpista(), definindo o tamanho da mesma e o progama adiciona ao vector pista</p>
 
-<p><b>5.</b>Ao iniciar a corrida, será mostrado os sapos dispóníveis para a corrida e o usuário definirá quais sapos participarão da corrida, após isso, será exibido cada loop do programa, no qual os sapos pulam um de cada vez por ciclo até que todos cheguem a linha de chegada, definida pelo tamanho da pista</p>
+<p><b>5.</b>Ao iniciar a corrida, será mostrado os sapos que irão para a corrida, será exibido cada loop do programa o sapo, o ID e o tamanho do pulo dado, no qual os sapos pulam um de cada vez por ciclo até que todos cheguem a linha de chegada, definida pelo tamanho da pista</p>
 
 * <p>Antes do usuário entrar no menu de execuções, o programa irá ler dois arquivos .txt, contendo um banco de dados dos sapos e pistas salvando em seus respectivos vectors</p>
 
